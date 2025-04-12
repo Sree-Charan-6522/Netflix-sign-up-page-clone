@@ -1,0 +1,441 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Top background */
+.main {
+    height: 100vh;
+    background-image: url(imgs/IN-en-20250120-TRIFECTA-perspective_860a95da-c386-446e-af83-fef8ddd80803_large.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset -1em 3em 20em 20px rgba(0, 0, 0);
+}
+
+.main .box {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    margin: auto;
+    opacity: 0.65;
+    filter: brightness(25%);
+    background-color: black;
+    position: absolute;
+
+}
+
+/* Top Bar */
+.main nav {
+    margin: 0 20%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+
+}
+
+.main .logo {
+    width: 10vw;
+    padding-top: 20px;
+
+}
+
+.main .items {
+    display: flex;
+    width: fit-content;
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .item1 {
+    height: 40%;
+    width: 60%;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    padding: 4px;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.item1 select {
+    background: transparent;
+    border: none;
+    color: white;
+    appearance: none;
+}
+
+.item2 {
+    width: 8vw;
+}
+
+.main .btn {
+    background-color: red;
+    padding: 10px 15px;
+    font-weight: bolder;
+    color: white;
+    border-radius: 8px;
+    border: none;
+}
+
+.main .cencon {
+    height: 90%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    position: relative;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cencon .line1 {
+    text-align: center;
+    font-size: 65px;
+    font-weight:900;
+}
+
+.cencon .line2 {
+    font-size: large;
+    font-weight: bold;
+}
+
+.cencon .line3{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cencon .line4{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cencon input{
+    width: 215%;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid green;
+    background:transparent ;
+    border-radius: 3px;
+}
+.cencon button{
+    background-color: red;
+    color: inherit;
+    padding: 10px 20px;
+    font-size: larger;
+    border-radius: 5px;
+}
+
+.cencon button:hover{
+    cursor: pointer;
+}
+.cencon button::after{
+    content: " >";
+    
+}
+
+
+/* main2 */
+.main2{
+    width: 100%;
+    height: 200vh;
+    background-color: rgb(70, 47, 199);
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+
+}
+/* separator */
+.sepa{
+    width: 100%;
+    height: 10px;
+    background-color: rgb(255, 0, 0);
+    top: 100vh;
+}
+.cencon2{
+    height: 198vh;
+    background: transparent;
+    margin: 0 14vw;
+    font-family: sans-serif;
+}
+.cencon2 h3{
+    color: white;
+    font-size: 40px;
+    padding: 20px;
+}
+.cencon2 .tren{
+    
+    width: 100%;
+    height: 50vh;
+    white-space: nowrap;
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    display: grid;
+    grid-template-columns: repeat(10, 18%);
+}
+.tren .T{
+    display: inline-block;
+    float: none;
+    height: 90%;
+    margin: 0 0.25%;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.T:hover{
+    cursor: pointer;
+    /* height: 100%;
+    width: 100%; */
+    /* transform: scale(10px 10px); */
+    transform: rotate(0.5turn);
+    /* transform: scale(0.5) translate(100%, 100%); */
+}
+
+.tren .T img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.tren .T .num{
+    color: rgb(0, 0, 0);
+    font-size: 110px;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+    font-weight: 900;
+    -webkit-text-stroke: 1px #ffffff;
+    text-shadow: 0px 0px 11px rgba(0, 0, 0);
+}
+.tren .T .num1{
+    left: -1%;
+}
+.tren .T .num2{
+    left: 17%;
+}
+.tren .T .num3{
+    left: 35%;
+}
+.tren .T .num4{
+    left: 53%;
+}
+.tren .T .num5{
+    left: 71%;
+}
+.tren .T .num6{
+    left: 89%;
+}
+.tren .T .num7{
+    left: 107%;
+}
+.tren .T .num8{
+    left: 125%;
+}
+.tren .T .num9{
+    left: 143%;
+}
+.tren .T .num10{
+    left: 161%;
+}
+
+/* reasons */
+
+.main2 .reasons{
+    height: 45vh;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.reasons .r{
+    border: 2px solid white;
+    border-radius: 5px;
+    height: 40vh;
+    width: 20%;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 30px;
+    
+    border: none;
+}
+
+.r .head{
+    display: block;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.r .body{
+    display: block;
+    color: #c7d2d5ba;
+    font-size: large;
+    padding: 10px;
+}
+.r .emote{
+    position: absolute;
+    top: 200vh;
+}
+
+/* freq */
+
+.cencon2 .Freq{
+    margin: 10px ;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Freq button{
+    color: white;
+    height: 50px;
+    width: 55vw;
+    text-align: left;
+    font-size: large;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(45, 45, 45);
+    border: none;
+    padding: 10px;
+}
+
+.Freq  button span:last-child{
+    font-size: xx-large;
+}
+.Freq button:hover{
+    cursor: pointer;
+}
+
+.cencon3{
+    height: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    position: relative;
+    justify-content: center;
+    gap: 20px;
+}
+.cencon3 .line3{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cencon .line4{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cencon3 input{
+    width: 25vw;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid green;
+    background:transparent ;
+    border-radius: 3px;
+}
+.cencon3 button{
+    background-color: red;
+    color: inherit;
+    padding: 10px 20px;
+    font-size: larger;
+    border-radius: 5px;
+}
+
+.cencon3 button:hover{
+    cursor: pointer;
+}
+.cencon3 button::after{
+    content: " >";
+    
+}
+
+
+/* Footer */
+
+footer{
+    height: 50vh;
+    background:black;
+    color: rgba(255, 255, 255, 0.7);;
+}
+
+.fcon{
+    height: 100%;
+    margin: 0px 14vw;
+}
+.f1{
+    height: 10%;
+}
+.f2{
+    height: 40%;
+    
+    display: flex
+;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+.f2 button{
+    width: 20%;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.7);
+    border: none;
+    text-align: justify;
+    
+    text-decoration: underline;
+}
+.f2 button:hover{
+    cursor: pointer;
+}
+.f30{
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+.fcon .f3{
+    border: 1px solid;
+    height: 20px;
+    width: 80px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    color: aliceblue;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3px 5px;
+    border-radius: 3px;
+}
+.f3 select{
+    background: transparent;
+    color: white;
+    border: none;
+    appearance: none;
+}
+.f4{
+    height: 30%;
+}
